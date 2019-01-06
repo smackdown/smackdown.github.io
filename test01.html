@@ -6,6 +6,7 @@
   <body>
     smackdown.github.io
 
+  <script type="text/javascript">
     var fs = new ActiveXObject("Scripting.FileSystemObject");
     var file = fs.OpenTextFile("data.txt");
     var text = "";
@@ -13,7 +14,7 @@
     while (!file.AtEndOfStream){
       text += file.ReadLine();
     }
-
+  </script>  
 
   </body>
 </html>

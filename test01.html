@@ -6,15 +6,14 @@
   <body>
     smackdown.github.io
 
-    <?php
-
-    $fp = fopen("data01.txt", "r");
-    while ($line = fgets($fp)) {
-      echo "$line";
+    var fs = new ActiveXObject("Scripting.FileSystemObject");
+    var file = fs.OpenTextFile("data.txt");
+    var text = "";
+    /* ファイルが最後まで読み込まれるまでループ */
+    while (!file.AtEndOfStream){
+      text += file.ReadLine();
     }
-    fclose($fp);
 
-    ?>
 
   </body>
 </html>

@@ -5,5 +5,16 @@
   </head>
   <body>
     smackdown.github.io
+
+    <?php
+
+    $fp = fopen("data01.txt", "r");
+    while ($line = fgets($fp)) {
+      echo "$line<br />";
+    }
+    fclose($fp);
+
+    ?>
+
   </body>
 </html>

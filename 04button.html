@@ -7,15 +7,14 @@
     04button.html<br>
     <script type="text/javascript">
     //リスト定義
-    var lista=new Array("","a01","a02","a03","a04","a05");
-    var listb=new Array("","b01","b02","b03","b04","b05");
-    var listc=new Array("","c01","c02","","","");
-
-    var f=document.f1;
+    var lista=new Array("a01","a02","a03","a04","a05");
+    var listb=new Array("b01","b02","b03","b04","b05");
+    var listc=new Array("c01","c02","","","");
 
     areaset()
     {
       var arr=new Array();
+      var f=document.f1;
       switch (document.f1.area.selectedIndex)
       {
         case 0: break;//document.selbox.area2.options[i].text="";break;
@@ -23,10 +22,10 @@
         case 2: arr = listb;break;
         case 3: arr = listc;break;
       }
-      for(var i=0; i<f.elements.length;i++)
+      for(var i=0;i<f.elements.length;i++)
       {
   //      if(f.elements[i].type=='button'
-        f.elements[i].value=arr(i)
+        f.elements[i].value=arr(i);
       }
 //      document.f1.bt1.value=arr(0);
 //      document.f1.bt2.value=arr(1);

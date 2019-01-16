@@ -7,22 +7,52 @@
     04button.html<br>
     <script type="text/javascript">
     //コメント
-    var lista=new Array("","a01","a02","a03","a04","a05")
-    var listb=new Array("","b01","b02","b03","b04","b05")
-    var listc=new Array("","c01","c02","","","")
+    var lista=new Array("","a01","a02","a03","a04","a05");
+    var listb=new Array("","b01","b02","b03","b04","b05");
+    var listc=new Array("","c01","c02","","","");
+
+    areaset()
+    {
+      var arr=new Array();
+      switch (document.f1.area.selectedIndex)
+      {
+        case 0: break;//document.selbox.area2.options[i].text="";break;
+        case 1: arr = lista;break;
+        case 2: arr = listb;break;
+        case 3: arr = listc;break;
+      }
+
+      for(var i=0;i<arr.length;i++)
+      {
+
+      }
+    }
+
+  //オプションタグを連続して書き換える
+  document.selbox.area2.options.length = 0;//初期化
+  for(var i=0;i<arr2.length;i++)
+    {
+      let op = document.createElement("option");
+          op.value = arr2[i];  //value値
+          op.text = arr2[i];   //テキスト値
+//        document.selbox.area2.options[i].text=arr2[i];
+      document.getElementById("a_2").appendChild(op);
+    }
+
     </script>
     <!--htmlコメント-->
-    <form>
-        <select name="maker" onchange="carSet()">
-        <option value="" data-value="">選択</option>
+    <form name="f1">
+        <select name="area" onchange="areaSet()">
+        <option value="" data-value="">▼選択</option>
         <option value="10" data-value="10">10</option>
         <option value="20" data-value="20">20</option>
-        </select>
-        <input type="button" value="aaa">
-        <input type="button" value="aaa">
-        <input type="button" value="aaa">
-        <input type="button" value="aaa">
-        <input  type="button" value="aaa">
+        <option value="30" data-value="30">30</option>
+      </select><br>
+        <input type="button" value="aaa" disabled><br>
+        <input type="button" value="aaa" disabled><br>
+        <input type="button" value="aaa" disabled><br>
+        <input type="button" value="aaa" disabled><br>
+        <input type="button" value="aaa" disabled><br>
     </form>
   </body>
 </html>

@@ -22,12 +22,14 @@
         case 3: arr = listc;break;
       }
 
-      for(var i=0;i<arr.length;i++)
-      {
+      document.f1.bt1.value=arr(0);
+      document.f1.bt1.value=arr(1);
+      document.f1.bt1.value=arr(2);
+      document.f1.bt1.value=arr(3);
+      document.f1.bt1.value=arr(4);
 
-      }
     }
-
+<!--
   //オプションタグを連続して書き換える
   document.selbox.area2.options.length = 0;//初期化
   for(var i=0;i<arr2.length;i++)
@@ -38,7 +40,7 @@
 //        document.selbox.area2.options[i].text=arr2[i];
       document.getElementById("a_2").appendChild(op);
     }
-
+-->
     </script>
     <!--htmlコメント-->
     <form name="f1">
@@ -48,11 +50,11 @@
         <option value="20" data-value="20">20</option>
         <option value="30" data-value="30">30</option>
       </select><br>
-        <input type="button" value="aaa" disabled><br>
-        <input type="button" value="aaa" disabled><br>
-        <input type="button" value="aaa" disabled><br>
-        <input type="button" value="aaa" disabled><br>
-        <input type="button" value="aaa" disabled><br>
+        <input type="button" name="bt1" value="button1" disabled><br>
+        <input type="button" name="bt2" value="button2" disabled><br>
+        <input type="button" name="bt3" value="button3" disabled><br>
+        <input type="button" name="bt4" value="button4" disabled><br>
+        <input type="button" name="bt5" value="button5" disabled><br>
     </form>
   </body>
 </html>

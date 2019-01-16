@@ -13,8 +13,8 @@
 
     areaset()
     {
-      var arr=new Array(5);
-      var f=document.f2;
+      var arr　=new Array(5);
+      var f　=document.f2;
       switch (document.f1.area.selectedIndex)
       {
         case 0: break;//document.selbox.area2.options[i].text="";break;
@@ -27,12 +27,7 @@
   //      if(f.elements[i].type=='button'
         f.elements[i].value=arr(i);
       }
-//      document.f1.bt1.value=arr(0);
-//      document.f1.bt2.value=arr(1);
-//      document.f1.bt3.value=arr(2);
-//      document.f1.bt4.value=arr(3);
-//      document.f1.bt5.value=arr(4);
-    }
+
     </script>
     <!--htmlコメント-->
     <form name="f1">
@@ -54,7 +49,12 @@
 </html>
 <!--
   //オプションタグを連続して書き換える
-  document.selbox.area2.options.length = 0;//初期化
+  //      document.f1.bt1.value=arr(0);
+  //      document.f1.bt2.value=arr(1);
+  //      document.f1.bt3.value=arr(2);
+  //      document.f1.bt4.value=arr(3);
+  //      document.f1.bt5.value=arr(4);
+      }  document.selbox.area2.options.length = 0;//初期化
   for(var i=0;i<arr2.length;i++)
     {
       let op = document.createElement("option");

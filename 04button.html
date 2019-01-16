@@ -13,8 +13,8 @@
 
     areaset()
     {
-      var arr=new Array();
-      var f=document.f1;
+      var arr=new Array(5);
+      var f=document.f2;
       switch (document.f1.area.selectedIndex)
       {
         case 0: break;//document.selbox.area2.options[i].text="";break;
@@ -54,7 +54,9 @@
         <option value="10" data-value="10">10</option>
         <option value="20" data-value="20">20</option>
         <option value="30" data-value="30">30</option>
-      </select><br>
+      </select>
+    </form><br>
+    <form name="f2">
         <input type="button" name="bt1" value="button1" disabled><br>
         <input type="button" name="bt2" value="button2" disabled><br>
         <input type="button" name="bt3" value="button3" disabled><br>

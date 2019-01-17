@@ -1,0 +1,64 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>04button.html</title>
+  </head>
+  <body>
+    04button.html<br>
+    <script type="text/javascript">
+    //リスト定義
+    var lista=new Array("a01","a02","a03","a04","a05");
+    var listb=new Array("b01","b02","b03","b04","b05");
+    var listc=new Array("c01","c02","","","");
+
+    function areaset()
+    {
+      var arr　=new Array(5);
+//      var f　=document.f2;
+      switch (document.f1.area.selectedIndex)
+      {
+        case 0: break;//document.selbox.area2.options[i].text="";break;
+        case 1: arr = lista;break;
+        case 2: arr = listb;break;
+        case 3: arr = listc;break;
+      }
+      for(var i=0;i<arr.length;i++)
+      {
+  //      if(f.elements[i].type=='button';
+        document.f2.elements[i].value=arr(i);
+//        f.elements[i].val.value=arr(i);
+      }
+    }
+    </script>
+    <form method="" name="f1">
+      <input type="button" name="f1_bt1" value="a" >
+      <input type="button" name="f1_bt2" value="b" >
+      <input type="button" name="f1_bt2" value="c" >
+    </form>
+    <form method="" name="f2">
+        <input type="button" name="bt1" value="button1" ><br>
+        <input type="button" name="bt2" value="button2" ><br>
+        <input type="button" name="bt3" value="button3" ><br>
+        <input type="button" name="bt4" value="button4" ><br>
+        <input type="button" name="bt5" value="button5" ><br>
+    </form>
+  </body>
+</html>
+<!--htmlコメント-->
+<!--
+  //オプションタグを連続して書き換える
+  //      document.f1.bt1.value=arr(0);
+  //      document.f1.bt2.value=arr(1);
+  //      document.f1.bt3.value=arr(2);
+  //      document.f1.bt4.value=arr(3);
+  //      document.f1.bt5.value=arr(4);
+      }  document.selbox.area2.options.length = 0;//初期化
+  for(var i=0;i<arr2.length;i++)
+    {
+      let op = document.createElement("option");
+          op.value = arr2[i];  //value値
+          op.text = arr2[i];   //テキスト値
+//        document.selbox.area2.options[i].text=arr2[i];
+      document.getElementById("a_2").appendChild(op);
+    }
+-->

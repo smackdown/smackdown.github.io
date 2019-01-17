@@ -11,11 +11,11 @@
     var listb=new Array("b01","b02","b03","b04","b05");
     var listc=new Array("c01","c02","","","");
 
-    function areaset()
+    function charset()
     {
       var arr　=new Array(5);
 //      var f　=document.f2;
-      switch (document.f1.area.selectedIndex)
+      switch (document.f1.elements)
       {
         case 0: break;//document.selbox.area2.options[i].text="";break;
         case 1: arr = lista;break;
@@ -31,9 +31,9 @@
     }
     </script>
     <form method="" name="f1">
-      <input type="button" name="f1_bt1" value="a" >
-      <input type="button" name="f1_bt2" value="b" >
-      <input type="button" name="f1_bt2" value="c" >
+      <input type="button" name="f1_bt1" value="a" onclick="chraset(1)">
+      <input type="button" name="f1_bt2" value="b" onclick="chraset(2)">
+      <input type="button" name="f1_bt2" value="c" onclick="chraset(3)">
     </form>
     <form method="" name="f2">
         <input type="button" name="bt1" value="button1" ><br>
